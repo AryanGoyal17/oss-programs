@@ -13,7 +13,8 @@ export function LocalTime({ dateString, formatStr = "MMMM d, yyyy", className }:
     const [mounted, setMounted] = useState(false)
 
     useEffect(() => {
-        setMounted(true)
+        const timeoutId = setTimeout(() => setMounted(true), 0);
+        return () => clearTimeout(timeoutId);
     }, [])
 
     // During SSR and first paint, render the original UTC string to avoid hydration mismatches
@@ -22,11 +23,13 @@ export function LocalTime({ dateString, formatStr = "MMMM d, yyyy", className }:
     }
 
     // Once mounted, safely format in the user's local timezone
+    let formatted = "";
     try {
         const date = parseISO(dateString)
-        const formatted = format(date, formatStr)
-        return <span className={className} suppressHydrationWarning>{formatted}</span>
-    } catch (err) {
+        formatted = format(date, formatStr)
+    } catch {
         return <span className={className}>{dateString}</span>
     }
+
+    return <span className={className} suppressHydrationWarning>{formatted}</span>
 }

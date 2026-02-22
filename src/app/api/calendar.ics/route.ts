@@ -1,6 +1,6 @@
 import { getPrograms } from "@/lib/programs";
 import ical from "ical-generator";
-import { parseISO, addHours } from "date-fns";
+import { parseISO } from "date-fns";
 import { NextResponse } from "next/server";
 
 export async function GET() {

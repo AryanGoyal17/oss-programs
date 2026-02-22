@@ -12,31 +12,29 @@ import {
 } from "@/components/ui/sheet";
 import { useState } from "react";
 
+const NavItems = ({ setOpen }: { setOpen: (open: boolean) => void }) => (
+    <>
+        <Link
+            href="/programs"
+            className="flex items-center gap-2 transition-all hover:text-foreground text-foreground/60 hover:-translate-y-px"
+            onClick={() => setOpen(false)}
+        >
+            <Layers className="w-4 h-4" />
+            Programs
+        </Link>
+        <Link
+            href="/calendar"
+            className="flex items-center gap-2 transition-all hover:text-foreground text-foreground/60 hover:-translate-y-px"
+            onClick={() => setOpen(false)}
+        >
+            <Calendar className="w-4 h-4" />
+            Timeline
+        </Link>
+    </>
+);
+
 export function Header() {
-    const [open, setOpen] = useState(false);
-
-    const NavItems = () => (
-        <>
-            <Link
-                href="/programs"
-                className="flex items-center gap-2 transition-all hover:text-foreground text-foreground/60 hover:-translate-y-px"
-                onClick={() => setOpen(false)}
-            >
-                <Layers className="w-4 h-4" />
-                Programs
-            </Link>
-            <Link
-                href="/calendar"
-                className="flex items-center gap-2 transition-all hover:text-foreground text-foreground/60 hover:-translate-y-px"
-                onClick={() => setOpen(false)}
-            >
-                <Calendar className="w-4 h-4" />
-                Timeline
-            </Link>
-        </>
-    );
-
-    return (
+    const [open, setOpen] = useState(false); return (
         <header className="sticky top-0 z-50 w-full glass">
             <div className="container flex h-16 items-center px-6 md:px-12 max-w-7xl mx-auto">
                 <Link href="/" className="mr-8 flex items-center space-x-2 group">
@@ -61,7 +59,7 @@ export function Header() {
                 </Link>
 
                 <nav className="hidden md:flex items-center space-x-8 text-sm font-medium flex-1">
-                    <NavItems />
+                    <NavItems setOpen={setOpen} />
                 </nav>
 
                 <nav className="hidden md:flex items-center space-x-4">
@@ -106,7 +104,7 @@ export function Header() {
                                 </SheetTitle>
                             </SheetHeader>
                             <nav className="flex flex-col space-y-6 mt-8">
-                                <NavItems />
+                                <NavItems setOpen={setOpen} />
                                 <div className="pt-4 border-t">
                                     <Link
                                         href="/submit"

@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { ExternalLinkIcon, GithubIcon, FileCodeIcon, FilePlus } from "lucide-react";
-import Link from "next/link";
 
 export default function SubmitPage() {
     const repoIssuesUrl = "https://github.com/yourusername/oss-opportunities/issues/new/choose";
@@ -31,7 +30,7 @@ export default function SubmitPage() {
                         </CardDescription>
                     </CardHeader>
                     <CardContent className="flex-1 text-sm text-muted-foreground space-y-2">
-                        <p>Know of a program that isn't listed here? Or did you notice a deadline needs updating?</p>
+                        <p>Know of a program that isn&apos;t listed here? Or did you notice a deadline needs updating?</p>
                         <p>Simply use our GitHub Issue Template. Fill out whatever information you have, and a maintainer will format it and add it to the database.</p>
                     </CardContent>
                     <CardFooter>
@@ -55,7 +54,7 @@ export default function SubmitPage() {
                     </CardHeader>
                     <CardContent className="flex-1 text-sm text-muted-foreground space-y-2">
                         <p>All program data lives in individual YAML files under <code>/data/programs/</code>.</p>
-                        <p>You can fork the repository, copy an existing YAML file as a template, fill out the new program's data, and submit a PR. It will auto-deploy once merged.</p>
+                        <p>You can fork the repository, copy an existing YAML file as a template, fill out the new program&apos;s data, and submit a PR. It will auto-deploy once merged.</p>
                     </CardContent>
                     <CardFooter>
                         <Button asChild variant="outline" className="w-full">

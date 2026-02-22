@@ -1,5 +1,5 @@
 import { getPrograms } from "@/lib/programs";
-import { parseISO, getMonth, getYear } from "date-fns";
+import { parseISO, getMonth } from "date-fns";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { CalendarDays } from "lucide-react";

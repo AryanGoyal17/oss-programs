@@ -1,8 +1,6 @@
 import { getPrograms } from "@/lib/programs";
-import Link from "next/link";
-import { Badge } from "@/components/ui/badge";
 import { ProgramList } from "@/components/ProgramList";
-import { Flame, CalendarClock, Globe, Rocket } from "lucide-react";
+import { Flame, CalendarClock, Globe } from "lucide-react";
 import { HeroAnimation } from "@/components/HeroAnimation";
 
 export default function Home() {

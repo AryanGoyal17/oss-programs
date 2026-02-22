@@ -2,7 +2,7 @@ import { getProgramBySlug, getPrograms } from "@/lib/programs";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { CalendarIcon, ExternalLinkIcon, MapPinIcon, UsersIcon, CircleDot, Clock, XCircle, User, Globe, Briefcase, Banknote, Timer, TimerOff, CalendarRange, Info } from "lucide-react";
-import Link from "next/link";
+
 import { notFound } from "next/navigation";
 import { LocalTime } from "@/components/LocalTime";
 import { cn } from "@/lib/utils";

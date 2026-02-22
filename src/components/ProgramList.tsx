@@ -44,7 +44,7 @@ export function ProgramList({ programs }: ProgramListProps) {
 
             {filteredPrograms.length === 0 ? (
                 <div className="py-24 text-center space-y-4 glass rounded-3xl border-dashed">
-                    <p className="text-xl font-medium text-muted-foreground">No opportunities found matching "{query}"</p>
+                    <p className="text-xl font-medium text-muted-foreground">No opportunities found matching &quot;{query}&quot;</p>
                     <button onClick={() => setQuery("")} className="text-primary font-semibold hover:underline">Clear search and show all</button>
                 </div>
             ) : (

@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# OSS Programs
+
+A curated, up-to-date directory of open source opportunities including mentorship programs, grants, fellowships, hackathons, and internships.
+
+![Next.js](https://img.shields.io/badge/Next.js-16-black?style=flat&logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat&logo=typescript)
+![License](https://img.shields.io/badge/License-MIT-green?style=flat)
+
+## Features
+
+- 📅 **Deadline Tracking** - Never miss an application deadline
+- 🔍 **Search & Filter** - Find programs by category, stipend, eligibility, and more
+- 📆 **Calendar Export** - Export deadlines to your favorite calendar app
+- 🌍 **Global Coverage** - Programs from around the world
+- 💰 **Stipend Info** - See compensation details at a glance
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+# Clone the repository
+git clone https://github.com/OWASP-STUDENT-CHAPTER/oss-programs.git
+cd oss-programs
+
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Contributing
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
-## Learn More
+### Quick Ways to Contribute
 
-To learn more about Next.js, take a look at the following resources:
+1. **Add a program** - Open an issue with program details
+2. **Update dates** - Fix outdated deadlines via PR
+3. **Build features** - Check issues labeled `help wanted`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Supported Programs
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Google Summer of Code (GSoC)
+- Outreachy
+- MLH Fellowship
+- LFX Mentorship
+- Hacktoberfest
+- Mozilla Fellowship
+- NLnet NGI Zero
+- And more...
 
-## Deploy on Vercel
+## Tech Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [Next.js 16](https://nextjs.org/) - React framework
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [shadcn/ui](https://ui.shadcn.com/) - UI components
+- [Fuse.js](https://fusejs.io/) - Fuzzy search
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+
+This project is licensed under the MIT License - see [LICENSE](LICENSE) for details.
+
+## Acknowledgments
+
+Built with ❤️ by the OWASP Student Chapter to help students and contributors find open source opportunities.

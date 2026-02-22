@@ -5,7 +5,7 @@ First off, thank you for considering contributing! The value of this project is 
 There are three primary ways you can contribute to the project:
 
 ## 1. Add a New Program (via GitHub Issue) - Best for non-technical users
-If you know of a program that isn't listed, simply [open an issue](https://github.com/yourusername/reponame/issues/new/choose) and select the "Add a New Program" template. Fill out as much information as you can. A maintainer will format it into YAML and merge it.
+If you know of a program that isn't listed, simply [open an issue](https://github.com/OWASP-STUDENT-CHAPTER/oss-programs/issues/new/choose) and select the "Add a New Program" template. Fill out as much information as you can. A maintainer will format it into YAML and merge it.
 
 ## 2. Add or Update a Program (via Pull Request) - Best for developers
 If the current year's deadlines for a program have changed, or if you want to add a new program directly:
